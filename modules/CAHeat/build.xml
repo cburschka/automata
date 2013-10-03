@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="jar" name="CAHeat">
+	
+    <target name="jar" depends="compile">
+        <jar destfile="${user.home}/.cellsim/${ant.project.name}.jar" filesetmanifest="mergewithoutmain">
+            <fileset dir="${basedir}/bin"/>
+        </jar>
+    </target>
+	<target name="compile">
+		<javac srcdir="src"
+	         destdir="bin"
+	         debug="on"
+		/>
+	</target>
+</project>
