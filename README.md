@@ -19,6 +19,6 @@ The simulator's universe model is highly extendable and will work with many diff
 
 The most common universe, Conway's Game of Life, uses a simple two-state two-dimensional cell grid with universally applicable rules based on the immediate neighbourhood. Similar simulations like Wire World are also included.
 
-Another module uses a non-discrete (floating point) cell state to simulate simple heat flow numerically.
+Another module uses a non-discrete (floating point) cell state to simulate simple heat flow numerically. Note that while the cell state supports non-discrete values, the simulation uses fixed time steps and cannot accurately model non-discrete physical processes.
 
 Yet another module overrides the transition function of the cellular grid to implement a Turmite universe, where the grid is only changed locally by a single Turing Machine-like actor that moves through it.
